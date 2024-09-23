@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation_For_Humanity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/588b7137ba.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryColor: '#B4F461',
+              },
+              fontFamily:{
+                 lexend:["Lexend", "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend">
+    <!-- Header Section Start -->
+    <header class="sticky top-0">
+       <nav class="bg-slate-200 py-4 lg:px-0 px-6">
+        <div class="flex justify-between max-w-screen-lg mx-auto">
+            <div>
+                <button class="px-8 py-3 rounded-lg font-semibold text-xl bg-primaryColor hover:bg-lime-400 duration-300">Blog</button>
+            </div>
+            <div class="gap-3 items-center md:flex hidden">
+                <i class="fa-solid fa-hand-holding-dollar text-4xl text-orange-400"></i>
+                <h4 class="text-xl font-semibold">Donate Bangladesh</h4>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-bangladeshi-taka-sign text-3xl text-orange-400"></i>
+                <p>
+                    <span id="own_account_balance">5500</span>
+                    <span>BDT</span>
+                </p>
+            </div>
+        </div>
+       </nav>
+       <!-- Page Button Here -->
+        <div class="flex justify-center py-12 space-x-4 bg-gray-200/50">
+            <!-- <button class="px-8 py-3 rounded-lg font-semibold text-xl bg-primaryColor">Donation</button> -->
+            <button id="donation_page_btn" class="btn sm:btn-lg md:btn-lg lg:btn-lg bg-primaryColor">Donation</button>
+            <!-- <button class="px-8 py-3 rounded-lg font-semibold text-xl border border-gray-400">History</button> -->
+            <button id="history_page_btn" class="btn sm:btn-lg md:btn-lg lg:btn-lg">History</button>
+        </div>
+    </header>
+     <!-- Header Section End -->
+    <main class="max-w-screen-lg mx-auto lg:px-0 px-6">
+        <!-- Donation section start Here -->
+       <section id="donation_page" class="space-y-8 mb-12">
+         <!-- card 01 -->
+         <div class="grid grid-cols-1 gap-y-6 lg:gap-y-0 lg:grid-cols-2 gap-x-8 border border-gray-200 rounded-xl p-8 items-center">
+            <div>
+                <img class="w-full" src="./assets/noakhali.png" alt="">
+            </div>
+            <!-- card content -->
+            <div class="space-y-2">
+                <button class="btn flex items-center gap-3">
+                    <i class="fa-solid fa-bangladeshi-taka-sign text-xl text-orange-400"></i>
+                    <p class="text-gray-500 font-normal ">
+                        <span id="donation_balance">0</span>
+                        <span>BDT</span>
+                    </p>
+                </button>
+                <h3 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <input id="donate_input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                <button id="donate_btn" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+            </div>
+        </div>
+        <!-- card 02 -->
+        <div class="grid grid-cols-1 gap-y-6 lg:gap-y-0 lg:grid-cols-2 gap-x-8 border border-gray-200 rounded-xl p-8 items-center">
+            <div>
+                <img class="w-full" src="./assets/feni.png" alt="">
+            </div>
+            <!-- card content -->
+            <div class="space-y-2">
+                <button class="btn flex items-center gap-3">
+                    <i class="fa-solid fa-bangladeshi-taka-sign text-xl text-orange-400"></i>
+                    <p class="text-gray-500 font-normal ">
+                        <span id="donation_balance2">600</span>
+                        <span>BDT</span>
+                    </p>
+                </button>
+                <h3 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h3>
+                <p class="text-gray-500">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                <input id="donate_input2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                <button id="donate_btn2" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+            </div>
+        </div>
+        <!-- card 03 -->
+        <div class="grid grid-cols-1 gap-y-6 lg:gap-y-0 lg:grid-cols-2 gap-x-8 border border-gray-200 rounded-xl p-8 items-center">
+            <div>
+                <img class="w-full" src="./assets/quota-protest.png" alt="">
+            </div>
+            <!-- card content -->
+            <div class="space-y-2">
+                <button class="btn flex items-center gap-3">
+                    <i class="fa-solid fa-bangladeshi-taka-sign text-xl text-orange-400"></i>
+                    <p class="text-gray-500 font-normal ">
+                        <span id="donation_balance3">2400</span>
+                        <span>BDT</span>
+                    </p>
+                </button>
+                <h3 class="font-bold text-xl">Aid for Injured in the Quota Movement</h3>
+                <p class="text-gray-500">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <input id="donate_input3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                <button id="donate_btn3" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+            </div>
+        </div>
+       </section>
+       <!-- History Section Start Here -->
+        <section id="history_page" class="mt-8 space-y-6 hidden">
+           <div class="border border-gray-200 p-8 rounded-xl space-y-4">
+            <h3 class="font-bold text-xl">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+            <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+           </div>
+           <div class="border border-gray-200 p-8 rounded-xl space-y-4">
+            <h3 class="font-bold text-xl">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+            <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+           </div>
+              
+        </section>
+    </main>
+
+
+    <!-- Script Tag added here -->
+     <script src="./js/script.js"></script>
+     <script src="./js/utilites.js"></script>
+
+</body>
+</html>
