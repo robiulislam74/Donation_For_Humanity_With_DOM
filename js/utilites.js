@@ -1,6 +1,6 @@
 // const donationBalance = parseFloat(document.querySelector('#donation_balance').innerText)
- let myOwnAccountBalance = parseFloat(document.querySelector('#own_account_balance').innerText)
-
+let myOwnAccountBalance = parseFloat(document.querySelector('#own_account_balance').innerText)
+const historyContainer = document.querySelector('#history_page')
 
 function pageChangingFunction(id){
     document.querySelector('#history_page').classList.add('hidden')
@@ -16,7 +16,8 @@ function buttonActiveColorChange(id){
     document.querySelector(id).classList.add('bg-primaryColor')
 }
 
-function donationCalculating(donationBalanceId,donateAmountId){
+// Donation Calculater Here
+function donationCalculating(donationBalanceId,donateAmountId,donateNames){
     let donationBalance = parseFloat(document.querySelector(donationBalanceId).innerText)
     const donateAmount = parseFloat(document.querySelector(donateAmountId).value)
     donationBalance = donationBalance + donateAmount
@@ -24,4 +25,14 @@ function donationCalculating(donationBalanceId,donateAmountId){
 
     myOwnAccountBalance = myOwnAccountBalance - donateAmount
     document.querySelector('#own_account_balance').innerText = myOwnAccountBalance
+    // History Added
+    const donateName = document.querySelector(donateNames).innerText
+    const div = document.createElement('div')
+    div.innerHTML += `
+        <div class="border border-gray-200 p-8 rounded-xl space-y-4">
+            <h3 class="font-bold text-xl">${donateAmount} Taka is Donated for ${donateName}</h3>
+            <p class="text-gray-500">Date : ${new Date()}</p>
+           </div>
+    `
+    historyContainer.append(div)
 }
