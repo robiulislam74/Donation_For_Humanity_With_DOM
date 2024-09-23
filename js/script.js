@@ -22,7 +22,11 @@ document.querySelector('#donate_btn3').addEventListener('click',function(){
     const idPass = donationCalculating('#donation_balance3','#donate_input3','#donate_name3')
 })
 
-// Modal Added Here
+// page btn bg Added Here
+window.addEventListener("scroll", function(event) {
+  const scrollAddCls = document.querySelector('#page_btn_bg')
+  scrollAddCls.classList.add('bg-gray-200/50')
+});
 
 
 

@@ -1,6 +1,7 @@
 // const donationBalance = parseFloat(document.querySelector('#donation_balance').innerText)
 let myOwnAccountBalance = parseFloat(document.querySelector('#own_account_balance').innerText)
 const historyContainer = document.querySelector('#history_page')
+const modal = document.querySelector('#my_modal_5')
 
 function pageChangingFunction(id){
     document.querySelector('#history_page').classList.add('hidden')
@@ -16,11 +17,27 @@ function buttonActiveColorChange(id){
     document.querySelector(id).classList.add('bg-primaryColor')
 }
 
+
 // Donation Calculater Here
 function donationCalculating(donationBalanceId,donateAmountId,donateNames){
     let donationBalance = parseFloat(document.querySelector(donationBalanceId).innerText)
     const donateAmount = parseFloat(document.querySelector(donateAmountId).value)
-    donationBalance = donationBalance + donateAmount
+    const newDonateAmount = document.querySelector(donateAmountId).value
+
+    if(donateAmount > myOwnAccountBalance){
+        alert("Warning! You have not enough money your balance.")
+        return
+    }
+    else if(isNaN(newDonateAmount) || donateAmount <= 0){
+        alert("Invalid Input! Please Try Again.")
+        return
+    }
+    else if(newDonateAmount == ""){
+        alert("Warning! Please provide a input.")
+    }
+    else{
+        modal.showModal()
+        donationBalance = donationBalance + donateAmount
     document.querySelector(donationBalanceId).innerText = donationBalance
 
     myOwnAccountBalance = myOwnAccountBalance - donateAmount
@@ -35,4 +52,6 @@ function donationCalculating(donationBalanceId,donateAmountId,donateNames){
            </div>
     `
     historyContainer.append(div)
+    }
+    
 }

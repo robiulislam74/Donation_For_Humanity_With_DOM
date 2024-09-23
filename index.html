@@ -47,7 +47,7 @@
         </div>
        </nav>
        <!-- Page Button Here -->
-        <div class="flex justify-center py-12 space-x-4 bg-gray-200/50">
+        <div id="page_btn_bg" class="flex justify-center py-10 mb-3 space-x-4 ">
             <!-- <button class="px-8 py-3 rounded-lg font-semibold text-xl bg-primaryColor">Donation</button> -->
             <button id="donation_page_btn" class="btn sm:btn-lg md:btn-lg lg:btn-lg bg-primaryColor">Donation</button>
             <!-- <button class="px-8 py-3 rounded-lg font-semibold text-xl border border-gray-400">History</button> -->
@@ -75,7 +75,7 @@
                 <h3 class="font-bold text-xl">Donate for <span id="donate_name">Flood at Noakhali, Bangladesh</span></h3>
                 <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <input id="donate_input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                <button id="donate_btn" onclick="my_modal_5.showModal()" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+                <button id="donate_btn" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
             </div>
         </div>
         <!-- card 02 -->
@@ -95,7 +95,7 @@
                 <h3 class="font-bold text-xl">Donate for <span id="donate_name2">Flood Relief in Feni,Bangladesh</span></h3>
                 <p class="text-gray-500">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <input id="donate_input2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                <button id="donate_btn2"  onclick="my_modal_5.showModal()" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+                <button id="donate_btn2" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
             </div>
         </div>
         <!-- card 03 -->
@@ -115,17 +115,15 @@
                 <h3 class="font-bold text-xl">Aid for <span id="donate_name3">Injured in the Quota Movement</span></h3>
                 <p class="text-gray-500">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input id="donate_input3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                <button id="donate_btn3" onclick="my_modal_5.showModal()" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
+                <button id="donate_btn3" class="btn btn-wide bg-primaryColor text-xl w-full">Donate Now</button>
             </div>
         </div>
        </section>
        <!-- Modal section -->
-        <!-- Open the modal using ID.showModal() method -->
-        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle lg:p-0 p-12">
         <div class="modal-box flex items-center flex-col">
             <h3 class="text-3xl font-extrabold">Congrates!</h3>
-            <i class="fa-solid fa-bangladeshi-taka-sign text-3xl text-orange-400 mt-4 mb-6"></i>
+            <i class="fa-solid fa-bangladeshi-taka-sign text-3xl text-orange-400 md:mt-4 md:mb-6 mt-3 mb-4"></i>
             <p class="py-4">You have donated from Humankind</p>
             <p class=" font-bold text-xl">Successfully</p>
             <div class="modal-action">
