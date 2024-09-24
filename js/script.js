@@ -30,7 +30,8 @@ window.addEventListener("scroll", function(event) {
   navBg.classList.remove('bg-slate-200')
 });
 // Blog Button functionality added here
-document.querySelector('#blog_btn').addEventListener('click',function(){
+document.querySelector('#blog_btn').addEventListener('click',function(e){
+    e.preventDefault()
     window.location = './blog.html'
 })
 
