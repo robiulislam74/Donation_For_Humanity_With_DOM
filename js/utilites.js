@@ -1,4 +1,3 @@
-// const donationBalance = parseFloat(document.querySelector('#donation_balance').innerText)
 let myOwnAccountBalance = parseFloat(document.querySelector('#own_account_balance').innerText)
 const historyContainer = document.querySelector('#history_page')
 const modal = document.querySelector('#my_modal_5')
@@ -17,11 +16,9 @@ function buttonActiveColorChange(id){
     document.querySelector(id).classList.add('bg-primaryColor')
 }
 
-
 // Donation Calculater Here
 function donationCalculating(donationBalanceId,donateAmountId,donateNames){
     let donationBalance = parseFloat(document.querySelector(donationBalanceId).innerText)
-    // const donateAmount = parseFloat(document.querySelector(donateAmountId).value)
     const newDonateAmount = document.querySelector(donateAmountId).value
     const donateAmount = parseFloat(newDonateAmount)
 
