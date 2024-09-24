@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog_page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/588b7137ba.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryColor: '#B4F461',
+                footerColor: '#f9f7f3'
+              },
+              fontFamily:{
+                 lexend:["Lexend", "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend relative min-h-screen">
+    <!-- Header Section Start -->
+    <header id="header_page_bg" class="sticky top-0">
+       <nav id="nav_bg" class="bg-slate-200 py-4 lg:px-0 px-6">
+        <div class="flex justify-between max-w-screen-lg mx-auto">
+            <div>
+                <button id="home_btn" class="px-8 py-3 rounded-lg font-semibold text-xl bg-primaryColor hover:bg-lime-400 duration-300">Home</button>
+            </div>
+            <div class="gap-3 items-center md:flex hidden">
+                <i class="fa-solid fa-hand-holding-dollar text-4xl text-orange-400"></i>
+                <h4 class="text-xl font-semibold">Donate For Humanity</h4>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-bangladeshi-taka-sign text-3xl text-orange-400"></i>
+                <p>
+                    <span id="own_account_balance">5500</span>
+                    <span>BDT</span>
+                </p>
+            </div>
+        </div>
+       </nav>
+    </header>
+     <!-- FAQ Section Start Here -->
+    <main class="max-w-screen-lg mx-auto">
+        <div class="mt-16 mb-8 flex items-center gap-x-3">
+            <h2 class="font-extrabold lg:text-4xl text-3xl">Important FAQ</h2>
+            <i class="fa-solid fa-circle-question text-4xl"></i>
+        </div>
+        <div class="border-2 border-gray-300 rounded-xl">
+            <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none rounded-t-xl">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The full meaning of DOM is Document Object Model. Like  Index.html
+                    to the document file representes as JavaScript objects. JavaScript provides an attractive user interface to the user by triggering various events using objects through DOM manipulation.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>Generally using 4 methods we can grab different elements of html file. They are highlighted below:
+                    <li>Using getElementsByClassName.</li>
+                    <li>Using getElementsByTagName.</li>
+                    <li>Using querySelector.</li>
+                    <li>Using querySelectorAll.</li>
+                </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>A specific target can be created using this.Instead of using eventListner for multiple elements one by one. We can do this for each element by using only one eventListener holding the element's parent. Moreover adding new element there works in the same way.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200  border-gray-300 rounded-none rounded-b-xl">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>To change other attributes like class, id , href , or src, color 
+                    <li>‍setAttribute()</li>
+                    <li>getAttribute()</li>
+                    <li>removeAttribute()</li>
+                    <li>hasAttribute()</li>
+                    We use these methods 
+                    Can manipulate the properties and style of an element.</p>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <!-- Script Tag added here -->
+    <!-- <script src="./js/script.js"></script>
+     <script src="./js/utilites.js"></script> -->
+     <script>
+        document.querySelector('#home_btn').addEventListener('click',function(){
+            window.location = '/index.html'
+        })
+     </script>
+
+</body>
+</html>

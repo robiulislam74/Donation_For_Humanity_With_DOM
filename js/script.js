@@ -24,9 +24,18 @@ document.querySelector('#donate_btn3').addEventListener('click',function(){
 
 // page btn bg Added Here
 window.addEventListener("scroll", function(event) {
-  const scrollAddCls = document.querySelector('#page_btn_bg')
-  scrollAddCls.classList.add('bg-gray-200/50')
+    const navBg = document.querySelector('#nav_bg')
+  const scrollAddCls = document.querySelector('#header_page_bg')
+  scrollAddCls.classList.add('bg-slate-200/80','backdrop-blur')
+  navBg.classList.remove('bg-slate-200')
 });
+// Blog Button functionality added here
+document.querySelector('#blog_btn').addEventListener('click',function(){
+    window.location = './blog.html'
+})
+
+
+
 
 
 
