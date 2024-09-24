@@ -52,7 +52,7 @@ function donationCalculating(donationBalanceId,donateAmountId,donateNames){
         const div = document.createElement('div')
         div.innerHTML += `
             <div class="border border-gray-200 p-8 rounded-xl space-y-4">
-                <h3 class="font-bold text-xl">${donateAmount} Taka is Donated for ${donateName}</h3>
+                <h3 class="font-bold text-lg lg:text-xl">${donateAmount} Taka is Donated for ${donateName}</h3>
                 <p class="text-gray-500">Date : ${new Date()}</p>
             </div>
         `

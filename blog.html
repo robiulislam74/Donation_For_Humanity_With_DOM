@@ -49,62 +49,62 @@
        </nav>
     </header>
      <!-- FAQ Section Start Here -->
-    <main class="max-w-screen-lg mx-auto pb-3">
-        <div class="mt-16 mb-8 flex items-center gap-x-3">
-            <h2 class="font-extrabold lg:text-4xl text-3xl">Important FAQ</h2>
-            <i class="fa-solid fa-circle-question text-4xl"></i>
-        </div>
-        <div class="border-2 border-gray-300 rounded-xl">
-            <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none rounded-t-xl">
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-                <div class="collapse-content">
-                  <p>The full meaning of DOM is Document Object Model. Like  Index.html
-                    to the document file representes as JavaScript objects. JavaScript provides an attractive user interface to the user by triggering various events using objects through DOM manipulation.It specializes the page so that plugins can change the structure, style and content of the document.</p>
-                </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                <div class="collapse-content">
-                  <p>Generally using 4 methods we can grab different elements of html file. They are highlighted below:
-                    <li>Using getElementsByClassName.</li>
-                    <li>Using getElementsByTagName.</li>
-                    <li>Using querySelector.</li>
-                    <li>Using querySelectorAll.</li>
-                    <p>The syntax goes like this:</p>
-                    <p>const button = document.querySelector('#toggle_btn');</p>
-                    <p>button.setAttribute('class', 'bg-lime-500');</p>
-                </p>
-                </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-                <div class="collapse-content">
-                  <p>A specific target can be created using this.Instead of using eventListner for multiple elements one by one. We can do this for each element by using only one eventListener holding the element's parent. Moreover adding new element there works in the same way.</p>
-                </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200  border-gray-300 rounded-none rounded-b-xl">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                <div class="collapse-content">
-                  <p>To change other attributes like class, id , href , or src, color 
-                    <li>‍setAttribute()</li>
-                    <li>getAttribute()</li>
-                    <li>removeAttribute()</li>
-                    <li>hasAttribute()</li>
-                    We use these methods 
-                    Can manipulate the properties and style of an element.
-                    <br>
-                    Allows changing the style of a particular element with the style keyword. You need to access a specific HTML element and then you can change the style of that element.
-                    The syntax goes like this: 
-                    <p>var text = document.getElementById("text");</p>
-                    text.styles.color = "blue"
-                </p>
-                </div>
-              </div>
-        </div>
+    <main class="max-w-screen-lg mx-auto pb-3 lg:px-0 px-6">
+            <div class="lg:mt-16 mt-10 lg:mb-8 mb-4 flex items-center gap-x-3">
+                <h2 class="font-extrabold lg:text-4xl text-3xl">Important FAQ</h2>
+                <i class="fa-solid fa-circle-question text-4xl"></i>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none rounded-t-xl">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                      <p>The full meaning of DOM is Document Object Model. Like  Index.html
+                        to the document file representes as JavaScript objects. JavaScript provides an attractive user interface to the user by triggering various events using objects through DOM manipulation.It specializes the page so that plugins can change the structure, style and content of the document.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                      <p>Generally using 4 methods we can grab different elements of html file. They are highlighted below:
+                        <li>Using getElementsByClassName.</li>
+                        <li>Using getElementsByTagName.</li>
+                        <li>Using querySelector.</li>
+                        <li>Using querySelectorAll.</li>
+                        <p>The syntax goes like this:</p>
+                        <p>const button = document.querySelector('#toggle_btn');</p>
+                        <p>button.setAttribute('class', 'bg-lime-500');</p>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 border-b-2 border-gray-300 rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                      <p>A specific target can be created using this.Instead of using eventListner for multiple elements one by one. We can do this for each element by using only one eventListener holding the element's parent. Moreover adding new element there works in the same way.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200  border-gray-300 rounded-none rounded-b-xl">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p>To change other attributes like class, id , href , or src, color 
+                        <li>‍setAttribute()</li>
+                        <li>getAttribute()</li>
+                        <li>removeAttribute()</li>
+                        <li>hasAttribute()</li>
+                        We use these methods 
+                        Can manipulate the properties and style of an element.
+                        <br>
+                        Allows changing the style of a particular element with the style keyword. You need to access a specific HTML element and then you can change the style of that element.
+                        The syntax goes like this: 
+                        <p>var text = document.getElementById("text");</p>
+                        text.styles.color = "blue"
+                    </p>
+                    </div>
+                  </div>
+            </div>
     </main>
 
     <!-- Script Tag added here -->
