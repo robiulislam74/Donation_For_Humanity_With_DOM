@@ -61,7 +61,7 @@
                         <h3 class="font-semibold text-xl lg:text-2xl lg:pr-8 pr-6">What is the Document Object Model (DOM)?</h3>
                         <i class="fa-regular fa-square-plus"></i>
                     </div>
-                    <div id="faq_answer" class="lg:pr-14 pr-10">
+                    <div id="faq_answer" class="lg:pr-14 md:pr-8 pr-6">
                         <p class="text-lg">The full meaning of DOM is Document Object Model. Like  Index.html
                             to the document file representes as JavaScript objects. JavaScript provides an attractive user interface to the user by triggering various events using objects through DOM manipulation.It specializes the page so that plugins can change the structure, style and content of the document.</p>
                     </div>
@@ -72,17 +72,18 @@
                         <h3 class="font-semibold text-xl lg:text-2xl lg:pr-8 pr-6">How do you select an element from the DOM?</h3>
                         <i class="fa-regular fa-square-plus"></i>
                     </div>
-                    <div id="faq_answer2" class="hidden lg:pr-14 pr-10 text-lg">
-                        <p class="text-lg">
+                    <div id="faq_answer2" class="hidden lg:pr-14 md:pr-8 pr-6 text-lg">
+                        <div class="text-lg">
                             <p>Generally using 4 methods we can grab different elements of html file. They are highlighted below:
                             <li>Using getElementsByClassName.</li>
                             <li>Using getElementsByTagName.</li>
                             <li>Using querySelector.</li>
                             <li>Using querySelectorAll.</li>
                             <p>The syntax goes like this:</p>
-                            <p>const button = document.querySelector('#toggle_btn');</p>
+                            <p>const button = document.getElementById('button')</p>
                             <p>button.setAttribute('class', 'bg-lime-500');</p>
                     </p>
+                    </div>
                     </div>
                 </div>
                 <!-- 03 -->
@@ -91,7 +92,7 @@
                         <h3 class="font-semibold text-xl lg:text-2xl lg:pr-8 pr-6">What is event delegation in the context of the DOM, and why is it useful?</h3>
                         <i class="fa-regular fa-square-plus"></i>
                     </div>
-                    <div id="faq_answer3" class="hidden lg:pr-14 pr-10">
+                    <div id="faq_answer3" class="hidden lg:pr-14 md:pr-8 pr-6">
                         <p class="text-lg">A specific target can be created using this.Instead of using eventListner for multiple elements one by one. We can do this for each element by using only one eventListener holding the element's parent. Moreover adding new element there works in the same way.</p>
                     </div>
                 </div>
@@ -101,7 +102,7 @@
                         <h3 class="font-semibold text-xl lg:text-2xl lg:pr-8 pr-6">How do you manipulate an element's attributes and styles using the DOM?</h3>
                         <i class="fa-regular fa-square-plus"></i>
                     </div>
-                    <div id="faq_answer4" class="hidden lg:pr-14 pr-10">
+                    <div id="faq_answer4" class="hidden lg:pr-14 md:pr-8 pr-6">
                         <div class="text-lg">
                             <p>To change other attributes like class, id , href , or src, color 
                                 <li>‍setAttribute()</li>
@@ -113,8 +114,8 @@
                                 <br>
                                 Allows changing the style of a particular element with the style keyword. You need to access a specific HTML element and then you can change the style of that element.
                                 The syntax goes like this: 
-                                <p>var text = document.getElementById("text");</p>
-                                text.styles.color = "blue"
+                                <p>const text = document.getElementById('text')</p>
+                                <p>text.styles.color = "blue"</p>
                             </p>
                         </div>
                     </div>
